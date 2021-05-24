@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test File</title>
+    <style>
+        .hello {
+            color: red;
+        }
+        
+        h1 {
+            /* visibility vs display, visibility takes up space while display doesn't */
+            /* display: none; */    
+            /* visibility: hidden; */
+
+            color: blue;
+            /*color will still be red because targeting a class takes precedence 
+            over targeting the h1 element */
+
+            color: blue !important;
+            /* override the precedence with !important flag so now h1 is blue */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus minus unde
+    facilis nihil officiis, ab reprehenderit maxime repellendus amet eos?</p>    
+</body>
+</html>
